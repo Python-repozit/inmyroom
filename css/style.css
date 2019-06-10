@@ -1,0 +1,1945 @@
+@font-face{
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?iefix') format('eot'),
+    url('../fonts/ProximaNova-Regular.woff') format('woff'),
+    url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Proxima Nova Bold';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?iefix') format('eot'),
+    url('../fonts/ProximaNova-Bold.woff') format('woff'),
+    url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Proxima Nova Black';
+    src: url('../fonts/ProximaNova-Black.eot');
+    src: url('../fonts/ProximaNova-Black.eot?iefix') format('eot'),
+    url('../fonts/ProximaNova-Black.woff') format('woff'),
+    url('../fonts/ProximaNova-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Proxima Nova Light';
+    src: url('../fonts/ProximaNova-Light.eot');
+    src: url('../fonts/ProximaNova-Light.eot?iefix') format('eot'),
+    url('../fonts/ProximaNova-Light.woff') format('woff'),
+    url('../fonts/ProximaNova-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-family: "Proxima Nova", sans-serif;
+}
+
+header {
+    padding-top: 64px;
+}
+
+.container{
+    max-width: 1330px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+h1 {
+    font-family: "Proxima Nova Black", sans-serif;
+    font-size: 5rem;
+    color: #000000;
+    text-align: center;
+}
+
+
+h2 {
+    font-family: "Proxima Nova Black", sans-serif;
+    font-size: 3.5625rem;
+    color: #000000;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-size: 	2.25rem;
+    color: #000000;
+    text-align: center;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex--center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex--between {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex--around {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .container--form {
+        max-width: 320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .container--form {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .container--form {
+        max-width: 730px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1330px) {
+    .container {
+        max-width: 1250px;
+    }
+}
+@media(min-width: 1430px) and (min-width: 1600px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    section#partners .container--nom {
+        max-width: 1350px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1540px;
+    }
+
+    section#partners .container--nom {
+        max-width: 1540px;
+    }
+}
+
+    .container--form {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .container_1240 {
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+
+/*----- FOR FOR CONTAINER -----*/
+
+@media (min-width: 1024px) {
+    .container--form {
+        max-width: 960px;
+    }
+
+    .container--nom {
+
+    }
+}
+
+
+
+/*-------HEADER------*/
+
+.header--top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #000;
+    z-index: 100;
+
+}
+
+.header--top p {
+    margin: 0;
+    color: #fff;
+    padding-right: 87px;
+    font-size: 24px;
+}
+
+.header--top button {
+    color: #fff;
+    background-color: #CB0000;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 7px;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+/*------ NAVBAR ----- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150px;
+}
+
+.navbar .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.navbar .logo img.inmyroom {
+    position: relative;
+}
+
+.navbar div.del {
+    width: 2px;
+    height: 62px;
+    background-color: #ADADAD;
+    margin: 0 20px;
+}
+
+.navbar .nav--list {
+
+}
+
+.navbar .nav--list ul {
+
+}
+
+.navbar .nav--list ul li {
+    display: inline-block;
+    list-style: none;
+    padding-right: 30px;
+}
+
+.navbar .nav--list ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #707070;
+}
+
+.navbar .nav--list ul li a:hover {
+    color: #CB0000;
+}
+
+.navbar .nav--list ul li a:active {
+    font-family: "Proxima Nova Bold", sans-serif;
+    color: #4A4A4A;
+}
+
+/*nav .nav--list ul li:last-child {*/
+    /*padding-right: 160px;*/
+/*}*/
+
+/*------ SLIDER ----- */
+
+section#slider {
+    position: relative;
+    width: 100%;
+    height: 660px;
+    background: url("../img/for_slider.jpg") no-repeat right;
+    overflow: hidden;
+}
+
+section#slider:before {
+    content: '';
+    position: absolute;
+    background: url("../img/slider_line_bg.png") no-repeat right;
+    height: 100%;
+    width: 100%;
+    top: 50px;
+    left: 290px;
+    z-index: 5;
+}
+
+section#slider:after {
+    content: '';
+    position: absolute;
+    background: url("../img/slider_line_bg_grey.png") no-repeat right;
+    height: 100%;
+    width: 100%;
+    bottom: 85px;
+    right: 85px;
+}
+
+section#slider .container {
+    position: relative;
+    height: 100%;
+}
+
+section#slider .text {
+    position: relative;
+    font-family: "Proxima Nova Black", sans-serif;
+    font-size: 7.8rem;
+    width: 720px;
+    line-height: 1.05;
+    color: #000000;
+    margin-left: 150px;
+    padding-top: 127px;
+    z-index: 7;
+}
+
+section#slider span.award {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: #CF2B2B url(../img/inmyroom.svg) no-repeat center;
+    border-radius: 50%;
+    bottom: -20%;
+    left: 33%;
+}
+
+    /*------ NUMBER ----- */
+
+section#number {
+    margin: 120px 0;
+}
+
+#number .round {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+
+#four {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Proxima Nova Light", sans-serif;
+    font-size: 6.25rem;
+    color: #4A4A4A;
+    width: 239px;
+    height: 239px;
+    border: #F0F0F0 solid 11px;
+    border-radius: 100%;
+}
+
+#four {
+    color: #CB0000;
+    border: #F7F7F7 solid 11px;
+    background-color: #F0F0F0;
+}
+
+
+section#number .round p {
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-size: 	1.75rem;
+    color: #000000;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.circle-big {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Proxima Nova Light", sans-serif;
+    font-size: 6.25rem;
+    color: #4A4A4A;
+    width: 280px;
+    height: 280px;
+}
+
+.circle-big svg {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+}
+
+.circle-big .bg {
+    fill: none;
+    stroke-width: 12px;
+    stroke: #F0F0F0;
+}
+
+.circle-big .first {
+    fill: none;
+}
+.first_animate {
+    stroke-width: 12px;
+    stroke: #CB0000;
+    stroke-dasharray: 55 900;
+    stroke-dashoffset: 1;
+    transform: rotate(-130deg);
+    transform-origin: 50% 50%;
+    animation: first_animate 2s ease-in-out;
+}
+
+.circle-big .second {
+    fill: none;
+}
+.second_animate {
+    stroke-width: 12px;
+    stroke: #CB0000;
+    stroke-dasharray: 400 900;
+    stroke-dashoffset: 1;
+    transform: rotate(-130deg);
+    transform-origin: 50% 50%;
+    animation: second_animate 2s ease-in-out;
+}
+
+.circle-big .third {
+    fill: none;
+}
+.third_animate {
+    stroke-width: 12px;
+    stroke: #CB0000;
+    stroke-dasharray: 888.56;
+    stroke-dashoffset: 60;
+    transform: rotate(-130deg);
+    transform-origin: 50% 50%;
+    animation: third_animate 2s ease-in-out;
+}
+
+
+@keyframes first_animate {
+    from {
+        stroke-dasharray: 0 900;
+    }
+    to {
+        stroke-dasharray: 55 900;
+    }
+}
+
+@keyframes second_animate {
+    from {
+        stroke-dasharray: 0 900;
+    }
+    to {
+        stroke-dasharray: 400 900;
+    }
+}
+
+@keyframes third_animate {
+    from {
+        stroke-dashoffset: 888.56;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/*----- ABOUT ----- */
+
+section#about {
+    margin-bottom: 120px;
+}
+
+section#about .about--lauout, section#contacts .about--lauout {
+    border-radius: 47px;
+    /*max-width: 1260px;*/
+    border: #fff solid 2px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.10);
+    padding: 85px 0;
+    margin: 25px auto;
+}
+
+section#about .about--lauout .logo,
+section#contacts .about--lauout .logo {
+    width: 20%;
+    text-align: center;
+    margin: 0 170px;
+    position: relative;
+    z-index: 5;
+
+}
+
+section#contacts .about--lauout .logo p:first-child {
+    height: 80px;
+}
+
+section#about .about--lauout .text,
+section#contacts .about--lauout .text{
+    width: 45%;
+    text-align: left;
+    z-index: 5;
+}
+
+section#about .about--lauout .text h2 {
+    font-family: "Proxima Nova Black", sans-serif;
+    font-size: 	3.5625rem;
+    text-align: left;
+    line-height: 1.05;
+    color: #000000;
+    margin: 0;
+}
+
+section#about .about--lauout .text p,
+section#about .about--lauout .logo p,
+section#contacts .about--lauout .text p {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 	1.375rem;
+    color: #000000;
+    margin: 30px 0;
+}
+
+section#about .about--lauout .text a {
+    font-family: "Proxima Nova Bold", sans-serif;
+    line-height: .28;
+    color: #CB0000;
+    text-decoration: none;
+}
+
+section#about .about--lauout .logo h3 {
+    font-family: "Proxima Nova Black", sans-serif;
+    font-size: 	1.375rem;
+    line-height: .19;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+section#about .container:before,
+section#contacts .container:before,
+section#answer .container:before{
+    content: '';
+    position: absolute;
+    background: url("../img/redactor_line_bg.png") no-repeat center;
+    height: 115%;
+    width: 120%;
+    top: 54px;
+    left: -180px;
+    overflow: hidden;
+    z-index: 4;
+}
+section#contacts .container:before {
+    top: -80px;
+    left: -80px;
+}
+
+/*------ NOMINATION -----*/
+
+section#nomination .container--nom h2 {
+    text-align: center;
+}
+
+/*----- SLICKER -----*/
+
+.slick-initialized .slick-slide {
+    position: relative;
+}
+
+.nomination {
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.nomination .slick-arrow {
+    top: calc(50% - 33px);
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    border: none;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+    z-index: 2;
+}
+
+.nomination .slick-prev {
+    left: 2%;
+    cursor: pointer;
+}
+
+.nomination .slick-next {
+    right: 2%;
+    cursor: pointer;
+}
+
+.nomination .nomination--img {
+    position: relative;
+    height: 378px;
+    background: no-repeat center;
+    background-size: cover;
+    border-radius: 30px;
+    margin: 15px 10px 15px 0;
+}
+.nomination .nomination--img:focus,
+.nomination .nomination--img:active {
+    outline: none;
+}
+
+.nomination .slick-slide:active,
+.nomination .slick-slide:focus {
+    outline: none;
+}
+
+span.eye, span.sharing{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-size: contain;
+}
+
+span.eye {
+    top: 29px;
+    right: 63px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCI+ICA8ZGVmcz4gICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiPiAgICAgIDxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgZmlsbD0ibm9uZSIvPiAgICA8L2NsaXBQYXRoPiAgPC9kZWZzPiAgPGcgaWQ9IkNvbXBvbmVudF8xNl8xIiBkYXRhLW5hbWU9IkNvbXBvbmVudCAxNiDigJMgMSIgY2xpcC1wYXRoPSJ1cmwoI2NsaXAtcGF0aCkiPiAgICA8Y2lyY2xlIGlkPSJFbGxpcHNlXzEzIiBkYXRhLW5hbWU9IkVsbGlwc2UgMTMiIGN4PSIyNSIgY3k9IjI1IiByPSIyNSIgZmlsbD0icmdiYSgwLDAsMCwwLjQpIi8+ICAgIDxnIGlkPSJHcm91cF81MSIgZGF0YS1uYW1lPSJHcm91cCA1MSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzLjAzOSAtMTA0LjkzNykiPiAgICAgIDxwYXRoIGlkPSJQYXRoXzEzNSIgZGF0YS1uYW1lPSJQYXRoIDEzNSIgZD0iTTUzLjcwOSwxMjkuNGwuMzE5LjUyMS0uMzE5LjUyMmExOS4yLDE5LjIsMCwwLDEtMy44MzQsNC4yMzksMTcuMjkxLDE3LjI5MSwwLDAsMS0yMi42NDYsMCwxOS4zNzcsMTkuMzc3LDAsMCwxLTMuODYzLTQuMjM2bC0uMzI2LS41MjYuMzI2LS41MjZhMTkuMzc3LDE5LjM3NywwLDAsMSwzLjg2My00LjIzNiwxNy4yOTEsMTcuMjkxLDAsMCwxLDIyLjY0NiwwQTE5LjE4NiwxOS4xODYsMCwwLDEsNTMuNzA5LDEyOS40Wm0tNS4xNjQtMi43NDlhMTUuMjkxLDE1LjI5MSwwLDAsMC0xOS45OTIsMCwxOC44MzIsMTguODMyLDAsMCwwLTMuMTI1LDMuMjY4LDE4LjgzLDE4LjgzLDAsMCwwLDMuMTI1LDMuMjY4LDE1LjI5MSwxNS4yOTEsMCwwLDAsMTkuOTkyLDAsMTguNTgyLDE4LjU4MiwwLDAsMCwzLjEtMy4yN0ExOC41ODgsMTguNTg4LDAsMCwwLDQ4LjU0NSwxMjYuNjUxWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIgZmlsbD0iI2ZmZiIvPiAgICAgIDxwYXRoIGlkPSJQYXRoXzEzNiIgZGF0YS1uYW1lPSJQYXRoIDEzNiIgZD0iTTE3MS44NjMsMTc3Ljg1OGE2LDYsMCwxLDEsNi02QTYsNiwwLDAsMSwxNzEuODYzLDE3Ny44NThabTAtMTBhNCw0LDAsMSwwLDQsNEE0LDQsMCwwLDAsMTcxLjg2MywxNjcuODYzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzMy4zMjcgLTQxLjk0MSkiIGZpbGw9IiNmZmYiLz4gICAgPC9nPiAgPC9nPjwvc3ZnPg==);
+}
+
+span.sharing {
+    top: 29px;
+    right: 18px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCI+ICA8ZGVmcz4gICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiPiAgICAgIDxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgZmlsbD0ibm9uZSIvPiAgICA8L2NsaXBQYXRoPiAgPC9kZWZzPiAgPGcgaWQ9IkNvbXBvbmVudF8xN18xIiBkYXRhLW5hbWU9IkNvbXBvbmVudCAxNyDigJMgMSIgY2xpcC1wYXRoPSJ1cmwoI2NsaXAtcGF0aCkiPiAgICA8Y2lyY2xlIGlkPSJFbGxpcHNlXzE0IiBkYXRhLW5hbWU9IkVsbGlwc2UgMTQiIGN4PSIyNSIgY3k9IjI1IiByPSIyNSIgZmlsbD0icmdiYSgwLDAsMCwwLjQpIi8+ICAgIDxnIGlkPSJHcm91cF8yNCIgZGF0YS1uYW1lPSJHcm91cCAyNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTMuNDI3IC0xMy4zNDcpIj4gICAgICA8cGF0aCBpZD0iUGF0aF80MCIgZGF0YS1uYW1lPSJQYXRoIDQwIiBkPSJNMjMuMiwzNC4zNTdsLTYuNy02LjdhLjgzOC44MzgsMCwwLDAtMS40MjcuNTg5VjMxLjZIMTIuMTQ1UTIuODEzLDMxLjYuNjkzLDM2Ljg3QTExLjkxNywxMS45MTcsMCwwLDAsMCw0MS4yMjhhMTUuNzE1LDE1LjcxNSwwLDAsMCwxLjY2Miw1LjlxLjAzOS4wOTIuMTM3LjMxNHQuMTc3LjM5M2ExLjQ4NywxLjQ4NywwLDAsMCwuMTcuMjg4LjQ0Ny40NDcsMCwwLDAsLjM2Ni4yMjMuMzgyLjM4MiwwLDAsMCwuMzA4LS4xMzEuNDg4LjQ4OCwwLDAsMCwuMTExLS4zMjcsMi42NjQsMi42NjQsMCwwLDAtLjAzMy0uMzQ3LDIuNzA3LDIuNzA3LDAsMCwxLS4wMzMtLjMwN3EtLjA2Ni0uODktLjA2Ni0xLjYxYTExLjEzOSwxMS4xMzksMCwwLDEsLjIyOS0yLjM2OSw3LjExMiw3LjExMiwwLDAsMSwuNjM1LTEuODEzLDQuNTUzLDQuNTUzLDAsMCwxLDEuMDQ3LTEuMzIyLDYuMTQzLDYuMTQzLDAsMCwxLDEuMzgxLS45MSw3LjQ4NSw3LjQ4NSwwLDAsMSwxLjc0MS0uNTU2LDE2LjYsMTYuNiwwLDAsMSwyLjAxNS0uMjgxcTEuMDE0LS4wNzksMi4zLS4wNzhoMi45MzF2My4zNWEuODMzLjgzMywwLDAsMCwxLjQyNy41ODlsNi43LTYuN2EuODIyLjgyMiwwLDAsMCwwLTEuMTc4WiIgZmlsbD0iI2ZmZiIvPiAgICA8L2c+ICA8L2c+PC9zdmc+);
+}
+
+.nomination button.voice {
+    position: absolute;
+    display: block;
+    height: 46px;
+    top: calc(50% - 23px);
+    left: calc(50% - 83px);
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 1rem;
+    background-color: #CB0000;
+    border: none;
+    border-radius: 11px;
+    color: #fff;
+    padding: 10px 27px;
+    cursor: pointer;
+}
+
+/*.nomination button.voice:hover {*/
+    /*background-color: #CB0000;*/
+    /*color: #fff;*/
+    /*transition: 0.5s;*/
+/*}*/
+
+.nomination h3 {
+    position: absolute;
+    display: block;
+    top: calc(50% - 47px);
+    left: 22px;
+    right: 22px;
+    height: 95px;
+    overflow: hidden;
+    margin: 0;
+    font-family: "Proxima Nova Black", sans-serif;
+    font-size: 2rem;
+    color: #F4F4F4;
+}
+
+.nomination h4 {
+    position: absolute;
+    display: block;
+    top: calc(50% + 62px);
+    left: 22px;
+    right: 22px;
+    height: 30px;
+    overflow: hidden;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 1.3125rem;
+    color: #F4F4F4;
+    letter-spacing: 1px;
+    margin: 12px 0;
+}
+
+.nomination p {
+    position: absolute;
+    display: block;
+    top: calc(50% + 100px);
+    left: 22px;
+    right: 22px;
+    font-family: "Proxima Nova Light", sans-serif;
+    font-size: 	0.9375rem;
+    color: #F4F4F4;
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.nomination p.city {
+    font-family: "Proxima Nova Black", sans-serif;
+    top: calc(50% + 150px);
+    left: 25px;
+    right: 25px;
+    height: 40px;
+    letter-spacing: 1px;
+}
+
+.nomination span.grad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.20);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)), color-stop(.5,#333333));
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 95%);
+    border-radius: 30px;
+}
+
+.parallax {
+    position: relative;
+    height: 70vh;
+    background: url("../img/parallax_img.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gen_partner {
+    position: absolute;
+    font-family: "Proxima Nova Black", sans-serif;
+    font-size: 4rem;
+    top: 50%;
+    left: 20%;
+    right: 20%;
+    color: #fff;
+}
+
+/*.nomination button.voice,*/
+.nomination h3,
+.nomination h4,
+.nomination p,
+.nomination p.city,
+.nomination span.grad,
+span.eye, span.sharing {
+    display: none;
+}
+
+/*----- AWARD -----*/
+
+section#awards {
+    margin-bottom: 120px;
+}
+
+section#awards .award {
+    position: relative;
+    margin: 35px 50px;
+    padding: 78px 81px;
+    text-align: center;
+    background: #D9D9D9 url(../img/award-sqad-bckgrnd.png) no-repeat center;
+    border-radius: 25px;
+}
+
+section#awards .award:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.20);
+}
+
+section#awards:before {
+    content: '';
+    position: absolute;
+    background: url("../img/award_line_bg.png") no-repeat center;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+}
+
+section#awards .award:before {
+    content: '';
+    position: absolute;
+    background: url(../img/award-sqad-grey.png) no-repeat center;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    transform: rotate(2deg);
+}
+
+section#awards .award:after {
+    content: '';
+    position: absolute;
+    background: url(../img/award-sqad-white.png) no-repeat center;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    transform: rotate(-2deg);
+}
+
+p.p--award {
+    position: relative;
+    color: #CB0000;
+    margin: 30px 0 15px 0;
+    font-size: 1rem;
+    font-family: "Proxima Nova Black", sans-serif;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+    z-index: 5;
+}
+
+p.p--award-2 {
+    position: relative;
+    font-family: "Proxima Nova Black", sans-serif;
+    font-size: 2.75rem;
+    min-height: 132px;
+    color: #000000;
+    white-space: nowrap;
+    z-index: 5;
+}
+
+section#awards img {
+    position: relative;
+    z-index: 5;
+}
+
+/*----- PARTNER -----*/
+
+section#partners {
+    background-color: #EBEBEB;
+    margin: 0;
+    padding: 98px 0;
+}
+
+section#partners .container--nom{
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+section#partners .border{
+    border-radius: 25px;
+}
+
+.flex--between.partner_border {
+    position: relative;
+    height: 770px;
+    border-radius: 30px;
+    padding: 0;
+}
+
+section#partners .partner {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+
+section#partners .revers {
+    flex-direction: row-reverse;
+}
+
+.partner--img {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.partner--text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+}
+.partner--text:hover {
+    right: -3px;
+    top: -3px;
+    padding: 3px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.20);
+    transition: 0.7s;
+    z-index: 5;
+}
+
+.revers .partner--text{
+    left: 0;
+}
+
+.revers .partner--text:hover{
+    left: -3px;
+}
+.partner .partner--text::after,
+.revers .partner--text::after{
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    top: calc(50% - 9px);
+    background-color: #fff;
+    z-index: 1;
+}
+
+.partner .partner--text::after {
+    left: -9px;
+}
+
+.partner.revers .partner--text::after {
+    right: -9px;
+    left: initial;
+}
+
+.partner.general .partner--text::after{
+    background-color: #034aa4;
+}
+
+.general .partner--text {
+    background-color: #034aa4;
+}
+
+.general .partner--text p {
+    color: #fff;
+}
+
+.partner--text p {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 1.1875rem;
+    color: #4A4A4A;
+    height: 165px;
+    padding: 0 50px 0 30px;
+    overflow: hidden;
+}
+
+.partner--text span {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #000;
+    font-family: "Proxima Nova Black", sans-serif;
+    font-size: 1.125rem;
+}
+
+.general .partner--text span {
+    color: #fff;
+}
+
+.partner img.partn_img {
+    position: relative;
+    width: 385px;
+    height: 385px;
+}
+
+.general .partner--img:before {
+    content: 'Генеральный партнер';
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-size: 0.8rem;
+    background-color: #c20000;
+    padding: 5px 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+span#partner--gen {
+    display: none;
+}
+
+.general span#partner--gen {
+    display: block;
+}
+
+button.partner--btn {
+    display: none;
+}
+
+/*----- LAST ------*/
+
+section#last {
+    background-color: #EBEBEB;
+    margin-bottom: 120px;
+}
+
+/*----- NEWS -----*/
+
+section#news h3 {
+    font-family: "Proxima Nova Black", sans-serif;
+    font-size: 	2.1875rem;
+    text-align: left;
+    line-height: 1.25rem;
+    margin-bottom: 50px;
+}
+
+.single--new {
+    position: relative;
+    width: 373px;
+    height: 373px;
+    margin-bottom: 40px;
+    background-position: center;
+    background-size: contain;
+    border-radius: 12px;
+}
+
+.single--new p {
+    position: absolute;
+    max-height: 75px;
+    overflow: hidden;
+    color: #fff;
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.1;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+}
+
+.single--new img {
+    border-radius: 15px;
+}
+
+/*----- INSTA -----*/
+
+section#insta {
+    margin-top: 64px;
+}
+
+.insta .slick-slide {
+    border: 2px solid #EBEBEB;
+}
+.insta .slick-slide:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.20);
+    border: 2px solid #CB0000;
+}
+
+
+/*----- FOOTER -----*/
+section#footer{
+    margin-bottom: 30px;
+    padding: 120px 0 40px 0;
+    background-color: #EBEBEB;
+    color: #666;
+}
+
+section#footer  ul {
+    color: #7d7d7d;
+    font-size: 0.81rem;
+    list-style: none;
+}
+
+section#footer ul {
+    color: #7d7d7d;
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-size: 0.81rem;
+    padding: 0;
+}
+
+section#footer ul li {
+    color: #868686;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 0.81rem;
+}
+
+section#footer ul li a {
+    color: #868686;
+    text-decoration: none;
+}
+
+.footer-first {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer-first a {
+    text-align: center;
+}
+
+.footer-first a:first-child {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.footer-first a:nth-child(2n) {
+    margin-bottom: 20px;
+}
+
+.footer-first a.app_apple {
+    text-align: center;
+    background: url("../img/app_apple_hover.png");
+    width: 170px;
+    height: 50px;
+}
+
+.footer-first a.app_apple:hover {
+    background: url("../img/app_apple.png");
+}
+
+.footer-first a.app_google {
+    text-align: center;
+    background: url("../img/app_google_hover.png");
+    width: 170px;
+    height: 50px;
+}
+
+.footer-first a.app_google:hover {
+    background: url("../img/app_google.png");
+}
+
+.footer-social {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.fb, .instagram, .vk {
+    display: inline-block;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+.fb {
+    background: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhYiIgZGF0YS1pY29uPSJmYWNlYm9vay1mIiBjbGFzcz0ic3ZnLWlubGluZS0tZmEgZmEtZmFjZWJvb2stZiBmYS13LTEwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSIjODY4Njg2IiBkPSJNMjc5LjE0IDI4OGwxNC4yMi05Mi42NmgtODguOTF2LTYwLjEzYzAtMjUuMzUgMTIuNDItNTAuMDYgNTIuMjQtNTAuMDZoNDAuNDJWNi4yNlMyNjAuNDMgMCAyMjUuMzYgMGMtNzMuMjIgMC0xMjEuMDggNDQuMzgtMTIxLjA4IDEyNC43MnY3MC42MkgyMi44OVYyODhoODEuMzl2MjI0aDEwMC4xN1YyODh6Ii8+PC9zdmc+) no-repeat center;
+}
+.ans_fb {
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iR3JvdXBfMzQ3IiBkYXRhLW5hbWU9Ikdyb3VwIDM0NyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNDMuMTE5IiBoZWlnaHQ9IjQzLjExOSIgdmlld0JveD0iMCAwIDQzLjExOSA0My4xMTkiPiAgPHBhdGggaWQ9IlBhdGhfMjAxMCIgZGF0YS1uYW1lPSJQYXRoIDIwMTAiIGQ9Ik0yMS41NTksMEEyMS41NiwyMS41NiwwLDEsMSwwLDIxLjU2LDIxLjU2LDIxLjU2LDAsMCwxLDIxLjU1OSwwWiIgZmlsbD0iIzNiNTk5OCIvPiAgPHBhdGggaWQ9IlBhdGhfMjAxMSIgZGF0YS1uYW1lPSJQYXRoIDIwMTEiIGQ9Ik0xMTcuMTY3LDc2LjY1MWgyLjc3OXYtNC4xaC0zLjI2NnYuMDE1Yy0zLjk1OC4xNC00Ljc2OSwyLjM2NS00Ljg0LDQuN2gtLjAwOHYyLjA1aC0yLjY5NXY0LjAxOWgyLjY5NVY5NC4xMDZoNC4wNjFWODMuMzMyaDMuMzI3bC42NDMtNC4wMTloLTMuOTY4Vjc4LjA3NEExLjMyNCwxLjMyNCwwLDAsMSwxMTcuMTY3LDc2LjY1MVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05Mi45ODIgLTYxLjgwOSkiIGZpbGw9IiNmZmYiLz48L3N2Zz4=) no-repeat center;
+}
+
+.instagram {
+    background: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhYiIgZGF0YS1pY29uPSJpbnN0YWdyYW0iIGNsYXNzPSJzdmctaW5saW5lLS1mYSBmYS1pbnN0YWdyYW0gZmEtdy0xNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNDQ4IDUxMiI+PHBhdGggZmlsbD0iIzg2ODY4NiIgZD0iTTIyNC4xIDE0MWMtNjMuNiAwLTExNC45IDUxLjMtMTE0LjkgMTE0LjlzNTEuMyAxMTQuOSAxMTQuOSAxMTQuOVMzMzkgMzE5LjUgMzM5IDI1NS45IDI4Ny43IDE0MSAyMjQuMSAxNDF6bTAgMTg5LjZjLTQxLjEgMC03NC43LTMzLjUtNzQuNy03NC43czMzLjUtNzQuNyA3NC43LTc0LjcgNzQuNyAzMy41IDc0LjcgNzQuNy0zMy42IDc0LjctNzQuNyA3NC43em0xNDYuNC0xOTQuM2MwIDE0LjktMTIgMjYuOC0yNi44IDI2LjgtMTQuOSAwLTI2LjgtMTItMjYuOC0yNi44czEyLTI2LjggMjYuOC0yNi44IDI2LjggMTIgMjYuOCAyNi44em03Ni4xIDI3LjJjLTEuNy0zNS45LTkuOS02Ny43LTM2LjItOTMuOS0yNi4yLTI2LjItNTgtMzQuNC05My45LTM2LjItMzctMi4xLTE0Ny45LTIuMS0xODQuOSAwLTM1LjggMS43LTY3LjYgOS45LTkzLjkgMzYuMXMtMzQuNCA1OC0zNi4yIDkzLjljLTIuMSAzNy0yLjEgMTQ3LjkgMCAxODQuOSAxLjcgMzUuOSA5LjkgNjcuNyAzNi4yIDkzLjlzNTggMzQuNCA5My45IDM2LjJjMzcgMi4xIDE0Ny45IDIuMSAxODQuOSAwIDM1LjktMS43IDY3LjctOS45IDkzLjktMzYuMiAyNi4yLTI2LjIgMzQuNC01OCAzNi4yLTkzLjkgMi4xLTM3IDIuMS0xNDcuOCAwLTE4NC44ek0zOTguOCAzODhjLTcuOCAxOS42LTIyLjkgMzQuNy00Mi42IDQyLjYtMjkuNSAxMS43LTk5LjUgOS0xMzIuMSA5cy0xMDIuNyAyLjYtMTMyLjEtOWMtMTkuNi03LjgtMzQuNy0yMi45LTQyLjYtNDIuNi0xMS43LTI5LjUtOS05OS41LTktMTMyLjFzLTIuNi0xMDIuNyA5LTEzMi4xYzcuOC0xOS42IDIyLjktMzQuNyA0Mi42LTQyLjYgMjkuNS0xMS43IDk5LjUtOSAxMzIuMS05czEwMi43LTIuNiAxMzIuMSA5YzE5LjYgNy44IDM0LjcgMjIuOSA0Mi42IDQyLjYgMTEuNyAyOS41IDkgOTkuNSA5IDEzMi4xczIuNyAxMDIuNy05IDEzMi4xeiIvPjwvc3ZnPg==) no-repeat center;
+}
+
+.vk {
+    background: url(data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhYiIgZGF0YS1pY29uPSJ2ayIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLXZrIGZhLXctMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDU3NiA1MTIiPjxwYXRoIGZpbGw9IiM4Njg2ODYiIGQ9Ik01NDUgMTE3LjdjMy43LTEyLjUgMC0yMS43LTE3LjgtMjEuN2gtNTguOWMtMTUgMC0yMS45IDcuOS0yNS42IDE2LjcgMCAwLTMwIDczLjEtNzIuNCAxMjAuNS0xMy43IDEzLjctMjAgMTguMS0yNy41IDE4LjEtMy43IDAtOS40LTQuNC05LjQtMTYuOVYxMTcuN2MwLTE1LTQuMi0yMS43LTE2LjYtMjEuN2gtOTIuNmMtOS40IDAtMTUgNy0xNSAxMy41IDAgMTQuMiAyMS4yIDE3LjUgMjMuNCA1Ny41djg2LjhjMCAxOS0zLjQgMjIuNS0xMC45IDIyLjUtMjAgMC02OC42LTczLjQtOTcuNC0xNTcuNC01LjgtMTYuMy0xMS41LTIyLjktMjYuNi0yMi45SDM4LjhjLTE2LjggMC0yMC4yIDcuOS0yMC4yIDE2LjcgMCAxNS42IDIwIDkzLjEgOTMuMSAxOTUuNUMxNjAuNCAzNzguMSAyMjkgNDE2IDI5MS40IDQxNmMzNy41IDAgNDIuMS04LjQgNDIuMS0yMi45IDAtNjYuOC0zLjQtNzMuMSAxNS40LTczLjEgOC43IDAgMjMuNyA0LjQgNTguNyAzOC4xIDQwIDQwIDQ2LjYgNTcuOSA2OSA1Ny45aDU4LjljMTYuOCAwIDI1LjMtOC40IDIwLjQtMjUtMTEuMi0zNC45LTg2LjktMTA2LjctOTAuMy0xMTEuNS04LjctMTEuMi02LjItMTYuMiAwLTI2LjIuMS0uMSA3Mi0xMDEuMyA3OS40LTEzNS42eiIvPjwvc3ZnPg==) no-repeat center;
+}
+.ans_vk {
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iR3JvdXBfMzQ5IiBkYXRhLW5hbWU9Ikdyb3VwIDM0OSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNDMiIGhlaWdodD0iNDMiIHZpZXdCb3g9IjAgMCA0MyA0MyI+ICA8ZyBpZD0iR3JvdXBfMzQ4IiBkYXRhLW5hbWU9Ikdyb3VwIDM0OCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSI+ICAgIDxjaXJjbGUgaWQ9IkVsbGlwc2VfMTAxIiBkYXRhLW5hbWU9IkVsbGlwc2UgMTAxIiBjeD0iMjEuNSIgY3k9IjIxLjUiIHI9IjIxLjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiIGZpbGw9IiM0ZDc2YTEiLz4gIDwvZz4gIDxwYXRoIGlkPSJQYXRoXzIwMTIiIGRhdGEtbmFtZT0iUGF0aCAyMDEyIiBkPSJNMzEuNzUyLDU0Ljg5M2gxLjY4N2ExLjQyNCwxLjQyNCwwLDAsMCwuNzctLjMzNywxLjIzNSwxLjIzNSwwLDAsMCwuMjMyLS43NDFzLS4wMzMtMi4yNjQsMS4wMTgtMi42LDIuMzY2LDIuMTg4LDMuNzc2LDMuMTU2YTIuNjcyLDIuNjcyLDAsMCwwLDEuODc2LjU3MmwzLjc3LS4wNTNzMS45NzItLjEyMSwxLjAzNy0xLjY3MmExMi42LDEyLjYsMCwwLDAtMi44LTMuMjQ0Yy0yLjM2NC0yLjE5NC0yLjA0Ny0xLjgzOS44LTUuNjM1LDEuNzM0LTIuMzExLDIuNDI4LTMuNzIzLDIuMjExLTQuMzI3LS4yMDctLjU3Ni0xLjQ4Mi0uNDI0LTEuNDgyLS40MjRsLTQuMjQ1LjAyNmEuOTY0Ljk2NCwwLDAsMC0uNTQ4LjEsMS4xOSwxLjE5LDAsMCwwLS4zNzUuNDU2LDI0LjU3OSwyNC41NzksMCwwLDEtMS41NjgsMy4zMWMtMS44OSwzLjIxLTIuNjQ2LDMuMzc5LTIuOTU1LDMuMTgtLjcxOS0uNDY1LS41MzktMS44NjYtLjUzOS0yLjg2MiwwLTMuMTExLjQ3Mi00LjQwNy0uOTE5LTQuNzQzYTcuMjQ4LDcuMjQ4LDAsMCwwLTEuOTgxLS4yLDkuMTUsOS4xNSwwLDAsMC0zLjUyMy4zNmMtLjQ4My4yMzYtLjg1NS43NjMtLjYyOS43OTRhMS45MDUsMS45MDUsMCwwLDEsMS4yNTMuNjMsNC4xLDQuMSwwLDAsMSwuNDIsMS45MjFzLjI1LDMuNjYyLS41ODQsNC4xMTdjLS41NzIuMzEyLTEuMzU3LS4zMjUtMy4wNDItMy4yMzdBMjcuMDcsMjcuMDcsMCwwLDEsMjMuOSw0MC4zYTEuMjYxLDEuMjYxLDAsMCwwLS4zNS0uNDczLDEuNzU5LDEuNzU5LDAsMCwwLS42NTItLjI2M2wtNC4wMzQuMDI2cy0uNjA2LjAxNy0uODI4LjI4Yy0uMi4yMzQtLjAxNi43MTktLjAxNi43MTlTMjEuMTc0LDQ3Ljk4MSwyNC43NSw1MS43YTkuNjg2LDkuNjg2LDAsMCwwLDcsMy4xODlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTEuMDY0IC0yMy45NjQpIiBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=) no-repeat center;
+}
+
+    /*----- COPY -----*/
+section#copy, section#scripts {
+    margin: 30px 0;
+}
+
+section#copy p {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: .81rem;
+    color: #ccc;
+    padding: 5px 0;
+    margin: 0;
+    text-align: center;
+}
+
+/*----- FORM -----*/
+
+section#form {
+    margin-bottom: 120px;
+}
+
+section#form .container--form{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+section#form .place, section#form .place_100 {
+    display: flex;
+    flex-direction: column;
+}
+
+section#form h2 {
+    margin: 45px 0 95px 0;
+}
+
+div#enventor {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+section#form .place {
+    width: 45%;
+}
+
+section#form .place_100{
+    width: 100%;
+}
+
+section#form .foto {
+    width: 25%;
+}
+
+section#form .form {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    border-radius: 100%;
+    position: relative;
+    display: block;
+    font-size: 1em;
+    font-family: "Proxima Nova", sans-serif;
+    color: #707070;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    line-height: 1.25rem;
+    width: 188px;
+    height: 188px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.20);
+    margin: 25px 0 0 0;
+    cursor: pointer;
+
+}
+
+.inputfile + label span.avatar{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background: url(../img/avatar.svg) no-repeat center;
+    left: 64px;
+    top: 47px;
+}
+
+.inputproject {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputproject + label {
+    border-radius: 6px;
+    position: relative;
+    display: block;
+    font-size: 1em;
+    font-family: "Proxima Nova", sans-serif;
+    color: #707070;
+    text-align: center;
+    width: 158px;
+    height: 158px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.20);
+    margin: 22px 0 30px 0;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inputproject + label span.project{
+    content: '';
+    position: absolute;
+    width: 43px;
+    height: 35px;
+    background-size: contain;
+    background: url(../img/foto.png) no-repeat center;
+    left: 57px;
+    top: 52px;
+}
+
+.inputproject + label p{
+    position: absolute;
+    bottom: 25px;
+    left: 24px;
+}
+
+.inputproject + label p.remove {
+    color: #FFFFFF;
+    bottom: 50px;
+    left: 35px;
+    z-index: 4;
+}
+
+.inputproject + label p.remove:before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGRlZnM+PGNsaXBQYXRoIGlkPSJhIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDIwdjIwSDB6Ii8+PC9jbGlwUGF0aD48L2RlZnM+PGcgY2xpcC1wYXRoPSJ1cmwoI2EpIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMjAgMjBIMFYwaDIweiIvPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE2LjE2NyA4LjMzM2E2LjI3MiA2LjI3MiAwIDAgMC02LjE2Ny01IDYuMSA2LjEgMCAwIDAtNS41IDMuMzMzIDUuMDQ2IDUuMDQ2IDAgMCAwLTQuNSA1IDUuMDE1IDUuMDE1IDAgMCAwIDUgNWgxMC44MzNBNC4xMjYgNC4xMjYgMCAwIDAgMjAgMTIuNWE0LjI0MiA0LjI0MiAwIDAgMC0zLjgzMy00LjE2N3ptLTQuNSAyLjV2My4zMzNIOC4zMzN2LTMuMzMzaC0yLjVMMTAgNi42NjZsNC4xNjcgNC4xNjd6Ii8+PC9nPjwvc3ZnPg==);
+    width: 20px;
+    height: 20px;
+}
+
+.inputproject + label span.grad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: 0.2;
+    border-radius: 6px;
+    z-index: 3;
+}
+
+section#form .fotos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section#form .fotos .foto-proj:last-child {
+    padding-right: 0;
+}
+
+section#form .fotos .foto-proj:nth-child(4) {
+    padding-right: 0;
+}
+
+.inputfile + label.foto--self p {
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+}
+.inputfile + label.foto--self p.remove {
+    bottom: -50px;
+    left: 56px;
+}
+.inputfile + label.foto--self p.remove:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -27px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCI+ICA8ZGVmcz4gICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiPiAgICAgIDxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0ibm9uZSIvPiAgICA8L2NsaXBQYXRoPiAgPC9kZWZzPiAgPGcgaWQ9IlVwbG9hZCIgY2xpcC1wYXRoPSJ1cmwoI2NsaXAtcGF0aCkiPiAgICA8cGF0aCBpZD0icGF0aCIgZD0iTTIwLTRIMFYtMjRIMjBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDI0KSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIi8+ICAgIDxwYXRoIGlkPSJpY191cGxvYWQiIGQ9Ik0xNi4xNjctMTVBNi4yNzIsNi4yNzIsMCwwLDAsMTAtMjBhNi4xLDYuMSwwLDAsMC01LjUsMy4zMzMsNS4wNDYsNS4wNDYsMCwwLDAtNC41LDUsNS4wMTUsNS4wMTUsMCwwLDAsNSw1SDE1LjgzM0E0LjEyNiw0LjEyNiwwLDAsMCwyMC0xMC44MzMsNC4yNDIsNC4yNDIsMCwwLDAsMTYuMTY3LTE1Wm0tNC41LDIuNXYzLjMzM0g4LjMzM1YtMTIuNWgtMi41TDEwLTE2LjY2NywxNC4xNjctMTIuNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMjMuMzMzKSIgZmlsbD0iI2FhYSIgZmlsbC1ydWxlPSJldmVub2RkIi8+ICA8L2c+PC9zdmc+);
+    width: 20px;
+    height: 20px;
+}
+label {
+    color: #707070;
+    margin-bottom: 15px;
+}
+
+label span.red--star {
+    color: #CB0000;
+}
+
+.place_submit {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.place_submit p{
+    margin: 0;
+    font-size: 0.875rem;
+    color: #AAAAAA;
+}
+
+.more {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+    cursor: pointer;
+    z-index: 4;
+}
+.more p {
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-size: 1.25rem;
+    top: -15px;
+    width: 50%;
+    position: absolute;
+    left: calc(50% - 180px);
+    margin: 0;
+    background-color: #fff;
+}
+.more p:hover {
+    color: #CB0000;
+    transition: 0.5s;
+}
+
+.more:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #F0F0F0;
+    left: 0;
+    top: calc(50% - 2px);
+    z-index: -1;
+}
+
+section#form .submit_btn {
+    font-size: 1.25rem;
+    font-family: "Proxima Nova", sans-serif;
+    background-color: #CB0000;
+    border-radius: 11px;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    padding: 20px 30px;
+    line-height: 1.5rem;
+    width: 228px;
+   cursor: pointer;
+}
+
+section#form .submit_btn:hover {
+    background-color: #A30000;
+    transition: 0.5s;
+}
+
+input#agree {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+    margin-left: 50px;
+    margin-right: 15px;
+}
+
+textarea {
+    border		: 1px solid #888;
+}
+
+.select-css {
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid #AAAAAA;
+    padding: 7px 15px;
+    margin-bottom: 40px;
+    color: #4A4A4A;
+    font-size: 1.2rem;
+    font-family: "Proxima Nova", sans-serif;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0iaWNfZXhwYW5kX21vcmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPiAgPHJlY3QgaWQ9InJlY3RhbmdsZSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIi8+ICA8cGF0aCBpZD0icGF0aCIgZD0iTTE2LjYsOC42LDEyLDEzLjIsNy40LDguNiw2LDEwbDYsNiw2LTZaIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9IjAuNTQiLz48L3N2Zz4=');
+    background-repeat: no-repeat;
+    background-position: 99% 7px;
+}
+.select-css::-ms-expand {
+    display: none;
+}
+.select-css:hover {
+    border-color: #888;
+}
+.select-css option {
+    font-weight:normal;
+}
+.nomination .slick-arrow:focus {
+    outline: none;
+}
+
+.select-css .items label:hover
+{
+    background: #eee;
+    cursor: pointer;
+}
+
+
+section#form .place input:focus,
+section#form .place_100 input:focus,
+section#form .place_100 textarea:focus,
+section#form .place select:focus,
+section#form .place option:focus,
+.select-css:focus{
+    border-color: #CB0000;
+    outline: none;
+}
+
+section#form .place input,
+section#form .place_100 input,
+section#form .place_100 textarea,
+section#form .place select,
+section#form .place option{
+    border-radius: 6px;
+    border: 1px solid #AAAAAA;
+    padding: 7px 15px;
+    margin-bottom: 40px;
+    color: #4A4A4A;
+    font-size: 1.2rem;
+    font-family: "Proxima Nova", sans-serif;
+}
+
+section#form .place_100 textarea {
+    color: #AAAAAA;
+    padding: 25px;
+}
+
+/*----- CONTACTS -----*/
+
+section#contacts h2,
+section#info h2{
+    text-align: left;
+    line-height: 1;
+}
+
+section#contacts .logo p {
+    height: 132px;
+    text-align: left;
+    margin: 30px 0;
+}
+section#contacts .logo p a {
+    color: #CB0000;
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-size: 2.1875rem;
+    text-decoration: none;
+}
+section#contacts .logo p a:hover {
+    color: #A30000;
+}
+
+section#contacts .info,
+section#info .info
+{
+    max-width: 1260px;
+    margin: 80px auto;
+}
+
+section#info .info p {
+    font-size: 1.7rem;
+}
+section#info .info p.p_50 {
+    width: 50%;
+    margin-bottom: 35px;
+}
+section#info .info p b {
+    font-family: "Proxima Nova Black", sans-serif;
+}
+
+/*----- 404 -----*/
+
+section#outoff .container {
+    padding-bottom: 50px;
+}
+
+section#outoff h1 {
+    font-size: 9rem;
+    line-height: 1;
+    letter-spacing: 20px;
+    margin-bottom: 30px;
+}
+
+section#outoff a, section#answer a.btn  {
+    position: relative;
+    color: #fff;
+    background-color: #CB0000;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 7px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    width: 95px;
+    text-decoration: none;
+    z-index: 5;
+}
+
+
+/*----- ASWER -----*/
+
+
+section#answer .flex--around {
+    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 5;
+}
+
+
+section#answer p {
+    position: relative;
+    font-size: 1.875rem;
+    text-align: center;
+    color: #707070;
+    margin: 80px 0;
+    letter-spacing: -0.4px;
+    z-index: 5;
+}
+
+section#answer .thx h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+section#answer .shaer p  {
+    color: #4A4A4A;
+    text-align: left;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+section#answer .shaer a  {
+    margin-left: 20px;
+    width: 45px;
+    height: 45px;
+}
+
+section#answer .container:before {
+    height: 125%;
+    width: 120%;
+    top: 65px;
+    left: -95px;
+    z-index: 3;
+}
+
+
+
+/*---- MEDIA -----*/
+
+@media (max-width: 575px) {
+
+    header {
+        padding-top: 130px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    section#slider .text {
+        font-size: 3.7rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    section#slider span.award {
+        bottom: -37%;
+    }
+
+    section#awards .award {
+        padding: 35px 0;
+        margin: 35px 0;
+    }
+
+    p.p--award-2, p.p--award-2 {
+        font-size: 1.7rem;
+        white-space: nowrap;
+        padding: 35px 65px;
+    }
+
+    section#awards .award:before, section#awards .award:after {
+        display: none;
+    }
+
+    .nomination .nomination--img {
+        width: 100%;
+        margin: 0;
+    }
+
+    #number .round {
+        justify-content: space-between;
+        padding-top: 30px;
+        flex-direction: column;
+    }
+
+    section#about .about--lauout .logo,
+    section#about .about--lauout .text,
+    section#contacts .about--lauout .logo,
+    section#contacts .about--lauout .text{
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+        flex-direction: column;
+    }
+
+    .flex--between.partner_border {
+        height: 100%;
+    }
+
+    section#partners .partner {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .partner--text {
+        position: relative;
+        width: 100%;
+    }
+
+    .partner--img {
+        width: 100%;
+        height: 320px;
+    }
+
+    .header--top {
+        padding: 10px 15px;
+    }
+
+    .header--top p {
+        width: 70%;
+        padding: 0;
+    }
+
+    div.del {
+        display: none;
+    }
+
+    .general .partner--text span {
+        padding: 15px;
+    }
+
+    .partner--text p {
+        font-size: 1rem;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    section#form .foto, section#form .form {
+        width: 100%;
+    }
+
+    section#form .fotos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    section#form .fotos .foto-proj{
+        width: 100%;
+        padding: 0;
+    }
+
+    .more p {
+        width: 100%;
+        left: inherit;
+    }
+
+    .inputfile + label {
+        margin: 25px auto;
+    }
+
+    input#agree {
+        margin: 35px;
+    }
+
+    .gen_partner {
+        font-size: 2rem;
+    }
+
+    section#form .place {
+        width: 100%;
+    }
+
+    .nomination h3 {
+        font-size: 2rem;
+    }
+
+    .inputproject + label {
+        margin: 22px auto;
+    }
+
+    section#info .info p {
+        font-size: 1.2rem;
+    }
+
+    section#info .info p.p_50 {
+        width: 100%;
+    }
+
+    section#answer .shaer a {
+        margin-left: 10px;
+    }
+
+    .single--new {
+        max-width: 270px;
+        max-height: 270px;
+    }
+
+    .partner--text span {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    header {
+        padding-top: 130px;
+    }
+
+    div.del {
+        display: none;
+    }
+
+    section#slider .text {
+        width: 100%;
+        margin: 0;
+        font-size: 3.7rem;
+    }
+
+    #number .round {
+        justify-content: center;
+    }
+
+    section#partners .partner {
+        width: 100%;
+    }
+
+    section#about .about--lauout .logo, section#about .about--lauout .text {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+    }
+
+    .nomination .nomination--img {
+        margin: 0 auto;
+    }
+
+    .header--top {
+        padding: 10px 15px;
+    }
+
+    .header--top p {
+        width: 70%;
+        padding: 0;
+    }
+
+    section#form .foto, section#form .form {
+        width: 100%;
+    }
+
+    section#form .fotos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    section#form .fotos .foto-proj{
+        padding: 0;
+        width: 100%;
+    }
+
+    .more p {
+        width: 100%;
+        left: inherit;
+    }
+
+    .inputfile + label {
+        margin: 25px auto;
+    }
+
+    input#agree {
+        margin: 35px;
+    }
+
+    .inputproject + label {
+        margin: 22px auto;
+    }
+ }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    section#slider .text {
+        width: 100%;
+        margin: 0;
+    }
+
+    section#about .about--lauout .logo {
+        width: 100%;
+    }
+
+    section#about .about--lauout .text {
+        width: 100%;
+    }
+
+    section#partners .partner {
+        height: 385px;
+    }
+
+    section#partners .partner {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1260px) {
+    nav .nav--list ul li a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #707070;
+    }
+
+    div.del {
+        display: none;
+    }
+
+    section#about .about--lauout .logo {
+        width: 40%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    section#about .about--lauout .text {
+        width: 100%;
+        padding: 30px;
+    }
+    section#partners .partner {
+        height: 385px;
+    }
+
+    section#partners .partner {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59.23" height="56" viewBox="0 0 59.23 56">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="59.23" height="56" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect width="56" height="56" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect width="22.461" height="22.461" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Component_14_1" data-name="Component 14 – 1" clip-path="url(#clip-path)">
+    <g id="Avatar" clip-path="url(#clip-path-2)">
+      <circle id="Ellipse_98" data-name="Ellipse 98" cx="28" cy="28" r="28" fill="#a7a2a2"/>
+      <path id="Union_5" data-name="Union 5" d="M0,22.4V19.6C0,16.52,5.04,14,11.2,14s11.2,2.52,11.2,5.6v2.8ZM5.6,5.6a5.6,5.6,0,1,1,5.6,5.6A5.6,5.6,0,0,1,5.6,5.6Z" transform="translate(16.8 15.4)" fill="#fff"/>
+    </g>
+    <g id="Component_13_1" data-name="Component 13 – 1" transform="translate(36.769 32.769)" clip-path="url(#clip-path-3)">
+      <g id="Group_345" data-name="Group 345" transform="translate(-528 -603)">
+        <ellipse id="teal_circle" data-name="teal circle" cx="11.231" cy="11.231" rx="11.231" ry="11.231" transform="translate(528 603)" fill="#cb0000"/>
+      </g>
+      <text id="_" data-name="+" transform="translate(8.231 16.231)" fill="#fff" font-size="14" font-family="ProximaNova-Black, Proxima Nova" font-weight="800"><tspan x="0" y="0">+</tspan></text>
+    </g>
+  </g>
+</svg>

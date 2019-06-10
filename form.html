@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<head>
+    <meta charset="UTF-8">
+    <title>Inmyroom Award</title>
+    <link href="favicon.png" rel="icon" type="image/x-icon" />
+    <link rel="alternate" type="application/atom+xml" title="ATOM" href="https://www.inmyroom.ru/?format=atom" />
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body cz-shortcut-listen="true">
+<section id="navbar">
+    <div class="container navbar">
+        <div class="logo">
+            <a href="/">
+                <img src="img/logo_inmr.png" alt="" class="inmyroom">
+            </a>
+            <div class="del"></div>
+            <img src="img/partner_logo.png" alt="" class="samsung">
+        </div>
+        <div class="nav--list">
+            <ul>
+                <li><a href="/">О премии</a></li>
+                <li><a href="/">Номинации</a></li>
+                <li><a href="/">Партнеры</a></li>
+                <li><a href="/">Интересное</a></li>
+                <li><a href="/">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="form">
+    <div class="container--form">
+    <h2>Заполните форму</h2>
+    </div>
+    <form enctype="multipart/form-data" method="post">
+        <div class="container--form">
+            <div class="foto">
+                <input type="file" name="foto_self" id="foto_self" class="inputfile">
+                <label for="foto_self" class="foto--self">
+                    <span class="avatar"></span>
+                    <p>загрузить фото <br> участника</p></label>
+            </div>
+            <div class="form">
+                <div id="enventor">
+                    <div class="place">
+                        <label for="name">Имя<span class="red--star">*</span></label>
+                        <input type="text" id="name" placeholder="" required>
+                    </div>
+                    <div class="place">
+                        <label for="sername">Фамилия<span class="red--star">*</span></label>
+                        <input type="text" id="sername" placeholder="" required>
+                    </div>
+                </div>
+                <div class="place_100">
+                    <div class="more">
+                        <p id="more">+ Добавить еще одного участника</p>
+                    </div>
+                </div>
+                <div class="place">
+                    <label for="studio_name">E-mail<span class="red--star">*</span></label>
+                    <input type="text" id="email" placeholder="" required>
+                </div>
+                <div class="place">
+                    <label for="studio_sait">Телефон</label>
+                    <input type="text" id="phone" placeholder="">
+                </div>
+                <div class="place">
+                    <label for="studio_name">Названии студии</label>
+                    <input type="text" id="studio_name" placeholder="">
+                </div>
+                <div class="place">
+                    <label for="studio_sait">Сайт студии</label>
+                    <input type="text" id="studio_sait" placeholder="">
+                </div>
+                <div class="place">
+                    <label for="studio_sait">Instagram</label>
+                    <input type="text" id="intagram" placeholder="">
+                </div>
+                <div class="place_100">
+                    <label for="nominations">Выберите название номинации<span class="red--star">*</span></label>
+                    <select id="nominations" class="select-css" required>
+                        <option>Интерьер года</option>
+                        <option>Проект года</option>
+                        <option>Эксклюзивный проект года</option>
+                        <option>Самый удачный бюджетный проект</option>
+                        <option>Самый удачный бюджетный интерьер</option>
+                        <option>Дом года</option>
+                    </select>
+                </div>
+                <div class="place_100">
+                    <label for="nomination">Напишите, что вас вдохновило, особенности проекта, пожелания заказчиков, реализован ли проект и любую другую информацию:<span class="red--star">*</span></label>
+                    <textarea rows="10" cols="45" name="text" maxlength="700" required>
+- место:
+- метраж помещения:
+- количество комнат:
+- высоту потолков:
+- тип дома и любую другую дополнительную информацию:
+- бюджет (итоговая сумма, может быть примерной):
+- расскажите про заказчика:
+- какие материалы, мебель и предметы декора вы использовали:
+- ссылка на дополнительные фотоматериалы
+                    </textarea>
+                </div>
+                <div class="place_100">
+                    <label for="nomination">Перетащите фото сюда или <span class="red--star">выберите их на своем компьютере…*</span></label>
+                </div>
+                <div class="fotos">
+                    <div class="foto-proj">
+                    <input type="file" name="inputproject_1" id="inputproject_1" class="inputproject" required>
+                    <label for="inputproject_1" class="foto--proj" id="inputproject_1">
+                        <span class="project"></span>
+                        <p>добавить фото</p></label>
+                    </div>
+                    <div class="foto-proj">
+                    <input type="file" name="inputproject_2" id="inputproject_2" class="inputproject">
+                    <label for="inputproject_2" class="foto--proj" id="inputproject_2">
+                        <span class="project"></span>
+                        <p>добавить фото</p></label>
+                    </div>
+                    <div class="foto-proj">
+                    <input type="file" name="inputproject_3" id="inputproject_3" class="inputproject">
+                    <label for="inputproject_3" class="foto--proj">
+                        <span class="project"></span>
+                        <p>добавить фото</p></label>
+                    </div>
+                    <div class="foto-proj">
+                    <input type="file" name="inputproject_4" id="inputproject_4" class="inputproject">
+                    <label for="inputproject_4" class="foto--proj">
+                        <span class="project"></span>
+                        <p>добавить фото</p></label>
+                    </div>
+                    <div class="foto-proj">
+                        <input type="file" name="inputproject_5" id="inputproject_5" class="inputproject">
+                        <label for="inputproject_5" class="foto--proj">
+                            <span class="project"></span>
+                            <p>добавить фото</p></label>
+                    </div>
+                    <div class="foto-proj">
+                        <input type="file" name="inputproject_6" id="inputproject_6" class="inputproject">
+                        <label for="inputproject_6" class="foto--proj">
+                            <span class="project"></span>
+                            <p>добавить фото</p></label>
+                    </div>
+                    <div class="foto-proj">
+                        <input type="file" name="inputproject_7" id="inputproject_7" class="inputproject">
+                        <label for="inputproject_7" class="foto--proj">
+                            <span class="project"></span>
+                            <p>добавить фото</p></label>
+                    </div>
+                    <div class="foto-proj">
+                        <input type="file" name="inputproject_8" id="inputproject_8" class="inputproject">
+                        <label for="inputproject_8" class="foto--proj">
+                            <span class="project"></span>
+                            <p>добавить фото</p></label>
+                    </div>
+                </div>
+                <div class="place_100">
+                    <label for="nomination">Первое фото будет отображаться в результатах поиска, выберите наиболее удачное.
+                        <br>
+                        Вы можете загрузить до 5 фотографий в формате JPG или PNG. <br>
+                        Максимальный размер фото — 2MB.</label>
+                </div>
+                <div class="place_submit">
+                    <button type="submit" class="submit_btn">Отправить заявку</button>
+                    <input type="checkbox" id="agree" name="agree">
+                    <p>С правилами ознакомлен</p>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+<section id="nomination" style="background-color: #EBEBEB">
+    <!-- Номинация -->
+    <div class="container--nom">
+        <h2>Другие проекты в номинации “Название номинации”</h2>
+        <div class="nomination slider">
+            <div>
+                <div class="nomination--img" style="background-image: url(img/Rectangle_12.png)">
+                    <span class="grad"></span>
+                </div>
+                <a href="/object/id"><span class="eye"></span></a>
+                <a href="https://vk.com/share.php?url={адрес страницы работы}" target="_blank"><span class="sharing"></span></a>
+                <button class="voice">Проголосовать</button>
+                <h3>Лучший интерьер</h3>
+                <h4>Елена Иванова</h4>
+                <p>Модный розовый цвет в интерьере петербургской квартиры</p>
+                <p class="city">САНКТ-ПЕТЕРБУРГ</p>
+            </div>
+            <div>
+                <div class="nomination--img" style="background-image: url(img/Rectangle_12.png)">
+                    <span class="grad"></span>
+                </div>
+                <a href="/object/id"><span class="eye"></span></a>
+                <a href="https://vk.com/share.php?url={адрес страницы работы}" target="_blank"><span class="sharing"></span></a>
+                <button class="voice">Проголосовать</button>
+                <h3>Лучший интерьер</h3>
+                <h4>Елена Иванова</h4>
+                <p>Модный розовый цвет в интерьере петербургской квартиры</p>
+                <p class="city">САНКТ-ПЕТЕРБУРГ</p>
+            </div>
+            <div>
+                <div class="nomination--img" style="background-image: url(img/Rectangle_12.png)">
+                    <span class="grad"></span>
+                </div>
+                <a href="/object/id"><span class="eye"></span></a>
+                <a href="https://vk.com/share.php?url={адрес страницы работы} target="_blank""><span class="sharing"></span></a>
+                <button class="voice">Проголосовать</button>
+                <h3>Лучший интерьер</h3>
+                <h4>Елена Иванова</h4>
+                <p>Модный розовый цвет в интерьере петербургской квартиры</p>
+                <p class="city">САНКТ-ПЕТЕРБУРГ</p>
+            </div>
+            <div>
+                <div class="nomination--img" style="background-image: url(img/Rectangle_12.png)">
+                    <span class="grad"></span>
+                </div>
+                <a href="/object/id"><span class="eye"></span></a>
+                <a href="https://vk.com/share.php?url={адрес страницы работы} target="_blank""><span class="sharing"></span></a>
+                <button class="voice">Проголосовать</button>
+                <h3>Лучший интерьер</h3>
+                <h4>Елена Иванова</h4>
+                <p>Модный розовый цвет в интерьере петербургской квартиры</p>
+                <p class="city">САНКТ-ПЕТЕРБУРГ</p>
+            </div>
+            <div>
+                <div class="nomination--img" style="background-image: url(img/Rectangle_12.png)">
+                    <span class="grad"></span>
+                </div>
+                <a href="/object/id"><span class="eye"></span></a>
+                <a href="https://vk.com/share.php?url={адрес страницы работы} target="_blank""><span class="sharing"></span></a>
+                <button class="voice">Проголосовать</button>
+                <h3>Лучший интерьер</h3>
+                <h4>Елена Иванова</h4>
+                <p>Модный розовый цвет в интерьере петербургской квартиры</p>
+                <p class="city">САНКТ-ПЕТЕРБУРГ</p>
+            </div>
+            <div>
+                <div class="nomination--img" style="background-image: url(img/Rectangle_12.png)">
+                    <span class="grad"></span>
+                </div>
+                <a href="/object/id"><span class="eye"></span></a>
+                <a href="https://vk.com/share.php?url={адрес страницы работы} target="_blank""><span class="sharing"></span></a>
+                <button class="voice">Проголосовать</button>
+                <h3>Лучший интерьер</h3>
+                <h4>Елена Иванова</h4>
+                <p>Модный розовый цвет в интерьере петербургской квартиры</p>
+                <p class="city">САНКТ-ПЕТЕРБУРГ</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="partners" style="background-color: #FFF">
+    <h2>Наши партнеры</h2>
+    <div class="container--nom">
+        <div class="flex--between partner_border">
+            <div class="partner general">
+                <div class="partner--img" style="background: url(img/Samsung_img.png) no-repeat center;">
+                </div>
+                <div class="partner--text">
+                    <img src="img/_samsung-logo-transparent-9.png" alt="" class="partner--logo">
+                    <p>Южнокорейская группа компаний, один из крупнейших чеболей,
+                        основанный в 1938 году. На мировом рынке известен как производитель
+                        высокотехнологичных компонентов, включая полноцикловое производство
+                        интегральных микросхем, телекоммуникационного оборудования, бытовой
+                        техники, аудио- и видеоустройств. Главный офис компании расположен
+                        в Сувоне.</p>
+                    <span class="about">О парнере</span>
+                </div>
+            </div>
+            <div class="partner">
+                <div class="partner--img" style="background: url(img/Samsung_img.png) no-repeat center;">
+                </div>
+                <div class="partner--text">
+                    <img src="img/_samsung-logo-transparent-9.png" alt="" class="partner--logo">
+                    <p>Южнокорейская группа компаний, один из крупнейших чеболей,
+                        основанный в 1938 году. На мировом рынке известен как производитель
+                        высокотехнологичных компонентов, включая полноцикловое производство
+                        интегральных микросхем, телекоммуникационного оборудования, бытовой
+                        техники, аудио- и видеоустройств. Главный офис компании расположен
+                        в Сувоне.</p>
+                    <span>Подробнее</span>
+                    <button class="partner--btn">О партнеер</button>
+                </div>
+            </div>
+            <div class="partner">
+                <div class="partner--text">
+                    <img src="img/_samsung-logo-transparent-9.png" alt="" class="partner--logo">
+                    <p>Южнокорейская группа компаний, один из крупнейших чеболей,
+                        основанный в 1938 году. На мировом рынке известен как производитель
+                        высокотехнологичных компонентов, включая полноцикловое производство
+                        интегральных микросхем, телекоммуникационного оборудования, бытовой
+                        техники, аудио- и видеоустройств. Главный офис компании расположен
+                        в Сувоне.</p>
+                    <span>Подробнее</span>
+                    <button class="partner--btn">О партнеер</button>
+                </div>
+                <div class="partner--img" style="background: url(img/Samsung_img.png) no-repeat center;">
+                </div>
+            </div>
+            <div class="partner">
+                <div class="partner--text">
+                    <img src="img/_samsung-logo-transparent-9.png" alt="" class="partner--logo">
+                    <p>Южнокорейская группа компаний, один из крупнейших чеболей,
+                        основанный в 1938 году. На мировом рынке известен как производитель
+                        высокотехнологичных компонентов, включая полноцикловое производство
+                        интегральных микросхем, телекоммуникационного оборудования, бытовой
+                        техники, аудио- и видеоустройств. Главный офис компании расположен
+                        в Сувоне.</p>
+                    <span>Подробнее</span>
+                    <button class="partner--btn">О партнеер</button>
+                </div>
+                <div class="partner--img" style="background: url(img/Samsung_img.png) no-repeat center;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="footer">
+    <div class="container">
+        <div class="flex--around">
+            <div class="footer-first">
+                <a href="https://www.inmyroom.ru/" title="inmyroom">
+                    <img src="img/logo_inmr.svg" alt="">
+                </a>
+                <a href="https://itunes.apple.com/app/apple-store/id1057492258?pt=117708711&ct=inmyroom_bottom&mt=8" title="inmyroom" class="app_apple">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.improvemedia.inmyroom" class="app_google">
+                </a>
+            </div>
+            <div class="footer-col">
+                <ul>Структура
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Фотографии</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Профи</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>Магазин
+                    <li><a href="#">Публичная оферта</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Как оплатить</a></li>
+                    <li><a href="#">Уход за мебелью</a></li>
+                    <li><a href="#">Условия возврата</a></li>
+                    <li><a href="#">INMYROOM для поставщиков</a></li>
+                    <li><a href="#">Условия для дизайнеров</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>О проекте
+                    <li><a href="#">Что такое INMYROOM?</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Реклама и спецпроекты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Правила использования</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Публикация проектов</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="" class="fb"></a>
+            <a href="" class="instagram"></a>
+            <a href="" class="vk"></a>
+        </div>
+    </div>
+</section>
+<section id="copy">
+    <div class="container">
+        <p>Использование материалов возможно только с предварительного согласия <br>
+            правообладателей. Все права на изображения и тексты принадлежат их авторам.
+        </p>
+        <p>Сайт может содержать контент, не предназначенный для лиц младше 16-ти лет.</p>
+    </div>
+</section>
+<section id="scripts">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/clear-js.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+</section>
+</body>
+</html>
